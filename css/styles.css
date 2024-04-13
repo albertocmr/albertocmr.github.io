@@ -5,8 +5,53 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: lightgrey;
   background-color: #202020;
+}
+
+.contenedor{
+  position: absolute;
+  left: 10%;
+  top: 20%;
+}
+
+.moneda{
+  background: rgb(255, 115, 0);
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 20%;
+  animation: salto 0.8s infinite;
+}
+
+.linkedin::before{
+  content: '';
+  display: inline-block;
+  background: #0e78a9;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 20%;
+  left: 1400px;
+  top: 375px;
+}
+
+.linkedin::after{
+  content: '';
+  display: inline-block;
+  background-image: url("https://cdn.icon-icons.com/icons2/1584/PNG/512/3721674-linkedin_108053.png");
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-size: 90px 90px;
+  background-repeat: no-repeat;
+  left: 1405px;
+  top: 380px;
+  
+}
+
+@keyframes salto{
+  0%, 100% {top: 0;}
+  30% {top: -25px;}
 }
 
 #container{
