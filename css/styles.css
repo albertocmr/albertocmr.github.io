@@ -4,18 +4,19 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: lightgrey;
+  font-family: Arial, sans-serif;
+  background: lightgrey;
 }
 
 #container{
-    /*width: 70%;*/
-    widht: 1100px;
-    margin: 0px auto;
-    border: 1px solid black;
+  /*width: 70%;*/
+  width: 1500px;
+  margin: 0px auto;
+  border: 1px solid black;
 }
 
 header{
+  font-family: Baskerville;
   background-color: #101010;
   height: 100px;
   width: 100%;
@@ -46,16 +47,18 @@ nav ul li {
 
 #content{
   float: left;
-  width: calc(80% - 40px);
+  width: calc(85% - 25px);
   min-height: 500px;
   background: green;
-  padding: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
 }
 
 aside{
   float: left;
-  width: calc(20% - 22px);
-  min-height: 528px;
+  width: calc(15% - 17px);
+  min-height: 500px;
   background: #303030;
   padding-left: 10px;
   padding-right: 10px;
@@ -79,17 +82,18 @@ footer{
   margin-top: 15px;
   margin-bottom: 15px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #000000;
   
 }
 
 .article:first-child{
-  padding-top: 10px;
-  border-top: 1px solid #eee;
+  /*border-top: 1px solid #eee;*/
 }
 
 .article h2{
-  font-size: 25px;
+  color: white;
+  font-size:25px;
+  font-family: Georgia, serif;
 }
 
 h1 {  
@@ -99,13 +103,18 @@ h1 {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 0.3rem;
-  border-bottom: 1px solid #48e5c2;
+  border-bottom: 1px solid #999999;
 }
 
+
 aside h2{
+  margin-top: 15px;
   color: white;
   font-size:25px;
   font-family: Georgia, serif;
+  border-bottom: 3.5px solid #101010;
+  padding-bottom: 12px;
+  
 }
 
 hr{
