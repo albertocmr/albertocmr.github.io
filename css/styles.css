@@ -1,14 +1,98 @@
+*{
+  margin: 0px;
+  padding: 0x;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background: lightgrey;
 }
 
+#container{
+    /*width: 70%;*/
+    widht: 1100px;
+    margin: 0px auto;
+   border: 1px solid black;
+}
+
+header{
+  background: red;
+  height: 100px;
+  width: 100%;
+  border: 1px sold red;
+  text-align: center;
+  line-height: 100px;
+  color: white;
+  border-bottom: 3px dashed black;
+}
+
+nav{
+  background: lightblue;
+  height: 50px;
+  line-height: 30px;
+  border-bottom: 1px solid black;
+}
+
+nav ul li {
+  float: left;
+  list-style: none;
+  margin: 10px;
+  
+}
+
+.clearfix{
+  clear: both;
+}
+
+#content{
+  float: left;
+  width: calc(80% - 40px);
+  min-height: 500px;
+  background: green;
+  padding: 20px;
+}
+
+aside{
+  float: left;
+  width: calc(20% - 20px);
+  min-height: 500px;
+  background: orange;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+footer{
+  background: black;
+  color: white;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+
+.article{
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  
+}
+
+.article:first-child{
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.article h2{
+  font-size: 25px;
+}
+
+/*
 h1 {
     color: #333;
+  
 }
-
+/*
 p {
     color: #666;
 }
-
-/* Agrega más estilos según tus necesidades */
