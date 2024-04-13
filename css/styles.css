@@ -1,6 +1,6 @@
 *{
   margin: 0px;
-  padding: 0x;
+  padding: 0px;
 }
 
 body {
@@ -116,15 +116,14 @@ aside h2{
   
 }
 
-aside img {
+img {
   width: 90px;
   transition-duration: 1s;
   transition-timing-function: ease;
 }
 
-aside img:hover {
+img:hover {
   scale: 1.2;
-  box-shadow: 0 0 1px  white;
 }
 
 hr{
