@@ -6,25 +6,26 @@
 body {
   font-family: Arial, sans-serif;
   background: lightgrey;
+  background-color: #202020;
 }
 
 #container{
-  /*width: 70%;*/
-  width: 1500px;
+  width: 85%;
   margin: 0px auto;
-  border: 1px solid black;
+  
+  background: #303030;
 }
 
 header{
   font-family: Baskerville;
   background-color: #101010;
   height: 100px;
-  width: 100%;
+  width: 96%;
   text-align: center;
   line-height: 100px;
   color: white;
   padding: 2rem;
-  border-bottom: 3px solid black;
+  border-bottom: 5px solid black;
 }
 
 nav{
@@ -47,9 +48,8 @@ nav ul li {
 
 #content{
   float: left;
-  width: calc(85% - 25px);
+  width: calc(85% - 27px);
   min-height: 500px;
-  background: green;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
@@ -121,6 +121,10 @@ hr{
   border-color: black;
   height: 1px;
   background-color: black;
+}
+
+section{
+  border: 1px solid green;
 }
 
 
