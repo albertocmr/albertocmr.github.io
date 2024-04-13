@@ -12,18 +12,18 @@ body {
     /*width: 70%;*/
     widht: 1100px;
     margin: 0px auto;
-   border: 1px solid black;
+    border: 1px solid black;
 }
 
 header{
-  background: red;
+  background-color: #101010;
   height: 100px;
   width: 100%;
-  border: 1px sold red;
   text-align: center;
   line-height: 100px;
   color: white;
-  border-bottom: 3px dashed black;
+  padding: 2rem;
+  border-bottom: 3px solid black;
 }
 
 nav{
@@ -54,19 +54,24 @@ nav ul li {
 
 aside{
   float: left;
-  width: calc(20% - 20px);
-  min-height: 500px;
-  background: orange;
+  width: calc(20% - 22px);
+  min-height: 528px;
+  background: #303030;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 10px;
+  border: 1px solid yellow;
+  text-align: center;
 }
 
 footer{
-  background: black;
+  background: #101010;
   color: white;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   height: 50px;
   line-height: 50px;
+  border: 3px solid brown;
 }
 
 .article{
@@ -87,13 +92,30 @@ footer{
   font-size: 25px;
 }
 
-/*
-h1 {
-    color: #333;
-  
+h1 {  
+  font-size: 3rem;
+  font-weight: 150;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #48e5c2;
 }
 
+aside h2{
+  color: white;
+  font-size:25px;
+  font-family: Georgia, serif;
+}
+
+hr{
+  border-color: black;
+  height: 1px;
+  background-color: black;
+}
+
+
+/*
 p {
     color: #666;
-}
-*/
+}*/
