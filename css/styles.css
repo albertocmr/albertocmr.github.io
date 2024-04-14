@@ -1,155 +1,215 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mi - Alberto Cámara</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #181818;
+}
+
+#container{
+  width: 90%;
+  margin: auto;
+}
+
+header{
+  font-family: Georgia;
+  display: flex;
+  justify-content: center;
+  line-height: 100px;
+  color: lightyellow;
+  padding: 2rem;
+}
+
+nav{
+  display: flex;
+  justify-content:left;
+  background: rgb(255, 255, 255);
+  height: 50px;
+  align-items: center;
+  /*border-bottom: 2px solid blueviolet;*/
   
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+nav ul li {
+  flex-direction: column;
+  float: left;
+  list-style: none;
+  margin: 10px;
   
-<body>
-    <div id="container">
-      <header>
-        <h1> Portfolio. </h1>
-      </header>
-      
-        <nav>
-          <ul>
-            <li>
-              <a href="index.html">
-                <em> Inicio </em>
-                </a>
-            </li>
-            <li>
-              <a href="index.html">
-                <em>Sobre mi </em>
-                </a>
-            </li>
-            <li>
-              <a href="aboutme">
-                <em> Formación académica </em>
-                </a>
-            </li>
-            </li>
-          </ul>
-        </nav>
-        
-        <section id="contenido">
-          <section class="aboutme">
-            <h2>Sobre mi.</h2>
-            
-            <div>
-              <p>
-                Como futuro ingeniero informático, me gustaría aplicar mis conocimientos y, al mismo tiempo, aprender y crecer profesionalmente.
-              </p>
-            </div>
-              </section>
-          
-          <section id="formacion" class="formacion">
-            <h2>Formación académica.</h2>
-            <div class="estudios">
-              <h3> BACHILLERATO. CIENCIAS TECNOLÓGICAS </h3>
+}
 
-              <div class="universidad"><p> IES Montes Orientales </p>
-              </div>
+.clearfix{
+  clear: both;
+}
 
-              <div id="fecha" class="fecha">
-                (2018 - 2020)
-              </div>
-            </div>
-
-            <div class="estudios">
-              <h3> GRADO DE INGENIERÍA INFORMÁTICA </h3>
-              <div class="universidad"><p> Universidad de Granada (UGR) </p>
-              </div>
-              
-              <div id="fecha" class="fecha">
-                (2020 - Actualidad)
-              </div>
-            </div>
-          </section>
-          
-          <section class="formacionalternativa">
-            <h2>Licencias y certificados</h2>
-            <div class="certificados">
-              <p> Cisco
-            </div>
-          </section>
-          
-          <section class="article">
-            <h2>Titulo del articulo</h2>
-            <p>Texto del articulo </p>
-          </section>
-          
-          </section>
-        </section>
-        
-        
-        <section id="contenido">
-          <article class="article">
-            <h2>Titulo del articulo</h2>
-            <p>Texto del articulo</p>
-          </article>
-          
-          <article class="article">
-            <h2>Titulo del articulo</h2>
-            <p>Texto del articulo</p>
-          </article>
-          
-          <article class="article">
-            <h2>Titulo del articulo</h2>
-            <p>Texto del articulo</p>
-          </article>
-          
-          <article class="article">
-            <h2>Titulo del articulo</h2>
-            <p>Texto del articulo </p>
-          </article>
-          
-          </article>
-        </section>
-        
-        <aside>
-          <h2> <em> Información de contacto </em></h2>
-          <br>
-          <hr>
-          <br>
-          <a href="https://github.com/albertocmr">
-            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="Github albertocmr"/>
-          </a>
-          <br><br>
-          <hr>
-          <br>
-          <a href="https://linkedin.com/in/alberto-cámara-a799a3267">
-            <img src="https://cdn.icon-icons.com/icons2/1584/PNG/512/3721674-linkedin_108053.png" alt="Linkedin albertocmr"/>
-          </a>
-          <br><br>
-          <hr>
-          <br>
-          <a href="https://twitter.com/AlbertoCamara_">
-            <img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter albertocmr"/>
-          </a> <br><br>
-          <hr>
-          <br>
-          <a href="https://instagram.com/albertocmr_">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/800px-Instagram-Icon.png" alt="Instagram albertocmr"/>
-          </a> <br><br>
-          <hr>
-          <br>
-          <a href="mailto:cam.ortiz.al@gmail.com">
-            <img src="https://cdn.icon-icons.com/icons2/1141/PNG/512/1486395875-mail_80620.png" alt="Mail albertocmr"/>
-          </a> 
-        </aside>
-
-        <div class="clearfix" />
-        <footer>
-			    Sitio desarrollado por Alberto Cámara &copy; 2024
-        </footer>
-      
-    </div>
+#contenido{
+  float: left;
+  width: 80%;
+  min-height: 700px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: 0.5rem;
+  box-sizing: border-box;
+  border-radius: 15px;
   
+  background-color: #1e2326;
+}
+
+aside{
+  position:-webkit-sticky;
+  width: 20%;
+  min-height: 919px;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: auto;
+
+  border: 2px solid black;
+  border-radius: 15px;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+
+  position: sticky;
+  top:0;
+  right:0;
+  background: #303030;
+}
+
+aside h2{
+  margin-top: 20px;
+  color: white;
+  font-size:22px;
+  font-family: Georgia, serif;
+  padding: 10px;
   
-</body>
-</html>
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  line-height: 50px;
+
+  background: #101010;
+  color: white;
+
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+
+.article:first-child{
+  /*border-top: 1px solid #eee;*/
+}
+
+.article h2{
+  color: white;
+  font-size:25px;
+  font-family: Georgia, serif;
+}
+
+h1 {  
+  font-size: 3rem;
+  font-weight: 130px;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #999999;
+}
+
+
+img {
+  align-items: center;
+  width: 90px;
+  transition-duration: .6s;
+  transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+  padding: 15px;
+  border-radius: 40%;
+}
+
+img:hover {
+  scale: 1.2;
+}
+
+hr{
+  border-color: black;
+  height: 2px;
+  background-color: black;
+}
+
+section{
+  background: #1e2326;
+  font-family: 'Righteous';
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+
+  padding: 20px 10px;
+  border-bottom: 1px solid #000000;
+}
+
+/* Titulos del section*/
+section h2{
+  font-size: 30px;
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+}
+
+
+section h3{
+  padding-top: 10px;
+}
+
+.aboutme{
+  color: white;
+  margin-top: 15px;
+  font-size: 20px;
+  background-color: brown;
+  border-radius: 2%;
+}
+
+.aboutme p{
+  padding-top: .5rem;
+  color: aqua;
+}
+
+
+.formacion{
+  color: #fff;
+  background-color: black;
+  border-radius: 2%;
+}
+
+.formacion .estudios{
+}
+
+
+.formacion .fecha {
+  display: block;
+  color: #1cb689;
+  margin-bottom: 25px;
+}
+
+.formacion .estudios .universidad{
+  font-size: 20px;
+  color: orange;
+}
+
+.formacionalternativa{
+  color: #fff;
+  background-color: blue;
+  border-radius: 2%;
+}
+
+
+
+
+
