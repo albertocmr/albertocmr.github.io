@@ -88,6 +88,21 @@ ul li {
     padding: 3px;
 }
 
+.skill {
+    background-color: #101010;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    transition: transform 0.3s ease;
+}
+
+
+.skill:hover {
+    transform: translateY(-5px);
+}
 .contacto {
     text-align: center;
     background-color: #11161a; /* Nuevo color de fondo */
@@ -140,17 +155,52 @@ footer h2 {
     padding-left: 20px; /* Ajuste del padding */
 }
 
-.skill {
-    justify-content: center;
-    display: inline-block;
-    background-color: #000000;
-    color: #fff;
-    padding: 5px 10px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    border-radius: 4px;
-    font-size: 0.9em;
+.titulo{
+  font-size: 18px;
 }
+
+.informacion{
+  font-size: 16px;
+}
+
+
+
+/* Formacion */
+.formacion{
+  list-style: none;
+}
+/* Estilos para los títulos y la información de la formación */
+.formacion .titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f0d64b; /* Color de texto amarillo */
+}
+
+.formacion .info {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #d4d4d4; /* Color de texto gris */
+}
+
+
+.formacion li {
+  margin-bottom: 20px; /* Espacio adicional entre elementos */
+    padding: 20px; /* Añadir padding */
+    background-color: #252A2E;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+
+.formacion li:hover{
+  transform: translateY(-5px);
+}
+
+.formacion li p {
+    margin: 0;
+}
+
 
 /* Media Queries */
 @media screen and (max-width: 600px) {
