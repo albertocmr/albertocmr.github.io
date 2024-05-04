@@ -42,54 +42,57 @@ ul {
     margin-bottom: 10px;
 }
 
+
+/* Formación académica*/
+
+.formacion {
+    background-color: #11161a;
+    border-radius: 6px;
+    padding: 10px;
+    list-style: none;
+}
+
+.titulo {
+    font-size: 18px;
+}
+
+.info, .centros {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(215, 230,19, 0.1);
+}
+
+.centros p {
+  font-size: 20px;
+}
+
+
+/* Habilidades */
 .habilidades {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.habilidades .skill {
+.skill {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #101010;
     color: #fff;
-    padding: 5px 10px;
-    margin-bottom: 5px;
     border-radius: 8px;
-    font-size: 0.9em;
-    transition: transform 0.3s ease;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s ease;
 }
 
-.habilidades .skill:hover {
+.skill:hover {
     background-color: #222222;
     transform: translateY(-5px);
-}
-
-.contenedor-intereses {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.contenedor-intereses .interes {
-    width: 100px;
-    height: 100px;
-    background-color: #252a2e;
-    border-radius: 10px;
-    margin: 0 15px 15px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s;
-    font-size: 12px;
-    color: white;
-}
-
-.contenedor-intereses .interes:hover {
-    background-color: #2f363a;
 }
 
 .section-header {
@@ -181,30 +184,30 @@ ul {
     padding: 0;
     margin-bottom: 10px;
 }
-
+/* Habilidades */
 .habilidades {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.habilidades .skill {
+.skill {
+    width: 90px;
+    height: 80px;
+    margin: 10px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #101010;
+    background-color: #22272b;
     color: #fff;
-    padding: 5px 10px;
-    margin-bottom: 5px;
     border-radius: 8px;
-    font-size: 0.9em;
-    transition: transform 0.3s ease;
+    font-size: 14px;
+    transition: background-color 1s, transform 0.3s ease;
 }
 
-.habilidades .skill:hover {
-    background-color: #222222;
-    transform: translateY(-5px);
+.skill:hover {
+    background-color: #0b082e;
+    transform: translateY(-3px);
 }
 
 .contenedor-intereses {
@@ -293,64 +296,6 @@ footer h2 {
     font-size: 18px;
 }
 
-.formacion {
-    background-color: #11161a;
-    border-radius: 6px;
-    padding: 10px;
-    list-style: none;
-}
-
-.titulo {
-    font-size: 18px;
-}
-
-.informacion {
-  font-size: 16px;
-}
-
-.info, .centros {
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(215, 230,19, 0.1);
-}
-
-.centros {
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
-
-.centros p {
-  font-size: 20px;
-}
-
-.formacion .titulo {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #857d7d;
-}
-
-.formacion .info {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #d4d4d4;
-}
-
-.formacion li {
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #252a2e;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.formacion li:hover {
-    transform: translateY(-5px);
-}
-
-.formacion li p {
-    margin: 0;
-}
 
 /* Media Queries */
 @media screen and (max-width: 600px) {
@@ -403,21 +348,6 @@ footer h2 {
 
 .informacion {
   font-size: 16px;
-}
-
-.info, .centros {
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(215, 230,19, 0.1);
-}
-
-.centros {
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
-
-.centros p {
-  font-size: 20px;
 }
 
 .formacion .titulo {
